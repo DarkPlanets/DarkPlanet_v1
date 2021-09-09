@@ -1,5 +1,5 @@
 /**
- *Submitted for verification at FtmScan.com on 2021-09-05
+ *Submitted for verification at FtmScan.com on 2021-09-09
 */
 
 // SPDX-License-Identifier: MIT
@@ -573,7 +573,7 @@ contract DarkPlanet_v1 is ERC721 {
     rarity constant rm = rarity(0xce761D788DF608BD21bdd59d6f4B54b2e27F25Bb);
     uint256 private _totalUsers;
     uint256 private _collectUsers;
-    mapping(uint => uint) private _darkPlanetPoint;
+    mapping(uint256 => uint256) private _darkPlanetPoint;
     mapping (uint256 => uint256)private _indexRarity;
     mapping(uint256 => uint256)private _rarityIndex;
     //xp->_dxp
@@ -787,7 +787,7 @@ contract DarkPlanet_v1 is ERC721 {
         return output;
     }
     
-    function totalSupply() external view returns (uint supply){
+    function totalSupply() external view returns (uint256 supply){
         return _totalUsers;
     }
 }
